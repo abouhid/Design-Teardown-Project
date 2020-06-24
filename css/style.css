@@ -147,7 +147,7 @@ li {
   width:420px;
   height: 115px;
   border: 1px solid red;
-  margin-top: 40px;
+  margin: 40px auto;
 
  
 }
@@ -161,6 +161,18 @@ li {
     top: 135px;
 }
 
+.item{
+  display:flex;
+ align-items: center;
+  flex-direction: column;
+}
+
+.item > div {
+  width: 70%;
+  margin-top:20px;
+}
+
+
 .article-container {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +180,6 @@ li {
 
 article {
   width: 50%;
-  height: 300px;
   border: 1px solid blue;
 }
 
@@ -190,7 +201,7 @@ article {
   border: 1px solid red;
 }
 
-.articleTitle h2 {
+.articleTitle {
   height: 150px;
   border: 1px solid blue;
 }
@@ -203,3 +214,34 @@ article {
   padding: 5px;
   margin: 10px 0;
 }
+
+.categories{
+  height: 40px;
+  border: 1px solid red;
+  display: flex;
+}
+
+.categories >div{
+  border: 1px solid red;
+  height: 30px;
+  width: fit-content;
+  margin:5px;
+  
+}
+ .arrow i{
+  width: 15px;
+  height: 15px;
+  color: gray;
+}
+
+/*:hover transform: scale(10.5)
+outline: none
+
+transition: all 0.2s ease-in-out
+
+transform: rotate(-15deg)
+transform-origin: left bottom
+
+<link href='http://fonts.googleapis.com/css?family=Average|Courgette' rel='stylesheet' type='text/css'>
+
+<i class="fa fa-search"></i> */

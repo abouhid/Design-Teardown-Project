@@ -136,3 +136,27 @@ li {
 .input-container input {
   width: 350px;
 }
+
+.main-title{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+
+}
+.main-title span{
+  width:420px;
+  height: 115px;
+  border: 1px solid red;
+  margin-top: 40px;
+
+ 
+}
+
+.bringBack{
+  width: 230px;
+    height: 62px;
+    border: 1px solid red;
+    right: 60px;
+    position: absolute;
+    top: 135px;
+}

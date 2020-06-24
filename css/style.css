@@ -152,11 +152,54 @@ li {
  
 }
 
-.bringBack{
+.bringBack {
   width: 230px;
     height: 62px;
     border: 1px solid red;
     right: 60px;
     position: absolute;
     top: 135px;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 50%;
+  height: 300px;
+  border: 1px solid blue;
+}
+
+.art-container {
+  display: flex;
+  border: 1px solid blue;
+}
+
+.author-pic-container {
+  min-width: 85px;
+  min-height: 85px;
+  border: 1px solid red;
+}
+
+.articleAuthor {
+  margin-left: 10px;
+  height: 23px;
+  width: 200px;
+  border: 1px solid red;
+}
+
+.articleTitle h2 {
+  height: 150px;
+  border: 1px solid blue;
+}
+
+.articleTitle span {
+  display: block;
+  height: 25px;
+  width: 150px;
+  border: 1px solid red;
+  padding: 5px;
+  margin: 10px 0;
 }

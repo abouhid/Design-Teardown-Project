@@ -251,9 +251,30 @@ article {
   line-height: 1em;
 
 }
-.rel-text:hover{
+.rel-text:hover {
   transform: scale(1.05);
 }
+
+.barista-container {
+  display: flex;
+  justify-content: center;
+}
+
+.barista-container img {
+  width: 258px;
+  height: 290px;
+}
+
+.img-text h2, p {
+  text-align: center;
+}
+
+.a-button {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 /*:hover transform: scale(10.5)
 outline: none

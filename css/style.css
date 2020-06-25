@@ -137,20 +137,19 @@ li {
   width: 350px;
 }
 
-.main-title{
-  border: 1px solid black;
+main{
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  align-items: center;
 }
-.main-title span{
+
+.main-title{
   width:420px;
   height: 115px;
   border: 1px solid red;
   margin: 40px auto;
-
- 
 }
+
 
 .bringBack {
   width: 230px;
@@ -158,7 +157,7 @@ li {
     border: 1px solid red;
     right: 60px;
     position: absolute;
-    top: 135px;
+    margin-top: 40px;
 }
 
 .item{
@@ -174,12 +173,13 @@ li {
 
 
 .article-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+  width: 100%;
 }
 
 article {
-  width: 50%;
+  
   border: 1px solid blue;
 }
 
@@ -232,6 +232,27 @@ article {
   width: 15px;
   height: 15px;
   color: gray;
+}
+
+.related-articles{
+  border: 1px solid red;
+    display: flex;
+    height: 570px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 40px 20px;
+}
+.rel-text{
+  transition: all 0.2s ease-in-out;
+  border: 1px solid green;
+  width:33%;
+  height:100%;
+  padding:15px;
+  line-height: 1em;
+
+}
+.rel-text:hover{
+  transform: scale(1.05);
 }
 
 /*:hover transform: scale(10.5)

@@ -237,16 +237,25 @@ article {
 .related-articles{
   border: 1px solid red;
     display: flex;
-    height: 570px;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1500px;
     padding: 40px 20px;
 }
+.relText{
+  transition: all 0.2s ease-in-out;
+  border: 1px solid green;
+  width:33.33%;
+  height:570px;
+  padding:15px;
+  line-height: 1em;
+
+}
 .rel-text{
   transition: all 0.2s ease-in-out;
   border: 1px solid green;
-  width:33%;
-  height:100%;
+  width:25%;
+  height:570px;
   padding:15px;
   line-height: 1em;
 
@@ -265,6 +274,9 @@ article {
   height: 290px;
 }
 
+.img-text {
+  width:50%;
+}
 .img-text h2, p {
   text-align: center;
 }
@@ -274,7 +286,16 @@ article {
   justify-content: center;
 }
 
-
+@media screen and (min-width: 1600px) {
+  .last{
+    display: none;
+  }
+}
+@media screen and (min-width: 2000px) {
+ .last{
+  display: flex;
+ }
+}
 
 /*:hover transform: scale(10.5)
 outline: none

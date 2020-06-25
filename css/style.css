@@ -290,12 +290,23 @@ article {
   .last{
     display: none;
   }
+  
 }
 @media screen and (min-width: 2000px) {
  .last{
   display: flex;
  }
 }
+@media screen and (min-width: 200px) {
+  .bringBack{
+   display: none;
+  }
+ }
+ @media screen and (min-width: 1000px) {
+  .bringBack{
+   display: flex;
+  }
+ }
 
 /*:hover transform: scale(10.5)
 outline: none

@@ -354,6 +354,12 @@ p {
   justify-content: center;
 }
 
+.see {
+  border-bottom: 3px solid grey;
+  margin-top: 5%;
+  padding-bottom: 0.5%;
+}
+
 @media screen and (min-width: 1600px) {
   .last {
     display: none;

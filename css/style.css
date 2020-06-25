@@ -34,8 +34,6 @@ samp,
 small,
 strike,
 strong,
-sub,
-sup,
 tt,
 var,
 b,
@@ -148,6 +146,12 @@ main{
   height: 115px;
   border: 1px solid red;
   margin: 40px auto;
+  font-family: Mija;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+  font-size: 36px;
+  background-color: gray;
+  text-align: center;
 }
 
 
@@ -183,15 +187,51 @@ article {
   border: 1px solid blue;
 }
 
+.articleTitle{
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.articleTitle span {
+  font-size: 15px;
+}
+
 .art-container {
   display: flex;
   border: 1px solid blue;
 }
 
 .author-pic-container {
-  min-width: 85px;
-  min-height: 85px;
-  border: 1px solid red;
+  width: 85px;
+  height: 85px;
+}
+
+.authorp {
+  color: #fff;
+  font-size: 20px;
+  }
+
+  .wrote {
+    font-size: ;
+  }
+
+.search-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.author-pic-container img {
+  max-width: 85px;
+  max-height: 85px;
+  transform: rotate(-15deg);
+  transform-origin: left bottom;
+}
+
+.author-pic-container img:hover{
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform .2s ease-out;
 }
 
 .articleAuthor {
@@ -215,13 +255,24 @@ article {
   margin: 10px 0;
 }
 
-.categories{
+.categories {
   height: 40px;
   border: 1px solid red;
   display: flex;
 }
 
-.categories >div{
+.categories p {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.categories > div {
   border: 1px solid red;
   height: 30px;
   width: fit-content;

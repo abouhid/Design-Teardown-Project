@@ -111,45 +111,53 @@ video {
 }
 
 .nav-container {
-  display: flex;
   border: 1px solid black;
-  padding: 1%;
-  justify-content: space-around;
-  align-items: center;
+  height: 70px;  
 }
 
 .ul-container {
-  display: flex;
+  display: grid;
   border: 1px solid black;
   list-style-type: none;
+  justify-content: space-around;
+  grid-auto-flow: column;
   align-items: center;
 }
 
-li {
+.ul-container li{
   border: 1px solid black;
-  width: 100px;
-  height: 50px;
+  padding: 7px 5px;
+  border-radius: 5px;
 }
 
-.more {
-  margin-left: 20px;
-  height: 56px;
-}
-.img-nav {
-  width: 210px;
-  border: 1px solid blue;
-  height: 70px;
+.img-nav{
+  border: 1px solid black;
+    height: 70px;
+    margin: -7px 0;
+    max-width: 110px;
+    width:110px;
+  }
+
+.img-nav img{
+  width: fit-content;
+  max-height: 100%;
+  display: block;
+  max-width: 100%;
+
 }
 
 .input-container {
   height: 56px;
   display: flex;
-  padding-left: 30px;
 }
 
 .input-container input {
   width: 350px;
+  border-radius: 5px;
+  outline: none;
 }
+
+/* MAIN */
 
 main {
   display: flex;

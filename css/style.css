@@ -355,11 +355,57 @@ p {
 }
 
 .see {
-  border-bottom: 3px solid grey;
-  margin-top: 5%;
-  padding-bottom: 0.5%;
+  border-bottom: 3px solid rgb(200, 200, 200);
+  margin: 8% auto 4% auto;
+  padding: 40px auto;
+  background-color: rgb(120, 120, 120);
 }
 
+.see span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 50px;
+}
+
+.click {
+  margin-top: 8% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(120, 120, 120);
+  width: 100vw;
+}
+
+.click h5, a, p, h2, img {
+  margin: 20px auto;
+  color: white;
+}
+
+.click h2 {
+  font-size: 55px;
+  text-align: center;
+  text-decoration: underline solid;
+}
+
+.click h5 {
+  padding-top: 70px;
+  font-size: 20px;
+}
+
+.click p {
+ font-size: 1.8em;
+ line-height: 1.5em;
+}
+
+.jump {
+  font-size: 1.8em;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
 @media screen and (min-width: 1600px) {
   .last {
     display: none;

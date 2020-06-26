@@ -110,6 +110,10 @@ video {
   background-color: rgb(40, 40, 40);
 }
 
+.grad1{
+  background: linear-gradient(15deg, #d4d4d4, #4b4b4b);;
+}
+
 .nav-container {
   height: 100px;
 }
@@ -149,6 +153,11 @@ video {
   width: 25px;
   margin: 0;
   margin-left: 10px;
+}
+
+#more:hover{
+  background-color: rgb(80, 80, 80);
+
 }
 
 .ul-container li:hover {
@@ -256,10 +265,11 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .item > div {
-  width: 70%;
+  width: 80%;
   margin-top: 20px;
 }
 .article-container article:nth-child(-n + 2) {
@@ -281,6 +291,7 @@ main {
 .art-container {
   display: flex;
   padding-top: 40px;
+  align-items: center;
 }
 
 .author-pic-container {
@@ -297,9 +308,10 @@ main {
   font-size: 16px;
 }
 
-.search-icon {
+.comm-icon {
   width: 15px;
   height: 15px;
+  margin:0;
 }
 
 .author-pic-container img {
@@ -329,16 +341,15 @@ main {
 }
 
 .articleTitle span {
-  display: block;
-  height: 25px;
-  width: 150px;
+ 
+  width: 25px;
+
   padding: 5px;
   margin: 10px 0;
   font-size: 15px;
 }
 
 .categories {
-  height: 40px;
   display: flex;
 }
 
@@ -346,11 +357,16 @@ main {
   width: 200px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-top: 30px;
 }
-
+.categories a{
+  margin:0;
+}
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .categories > div {
@@ -359,17 +375,15 @@ a {
   margin: 5px;
 }
 .arrow i {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 
 .arrow {
-  width: 33%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
+  height: 70px;
   align-self: flex-start;
-  align-items: center;
+  margin-left: 67px;
+  margin-top: 100px;
 }
 
 .related-articles {
@@ -382,7 +396,6 @@ a {
 }
 .relText {
   transition: all 0.2s ease-in-out;
-  border: 1px solid green;
   width: 33.33%;
   height: 570px;
   padding: 15px;
@@ -390,16 +403,29 @@ a {
 }
 .rel-text {
   transition: all 0.2s ease-in-out;
-  border: 1px solid green;
   width: 25%;
   height: 570px;
   padding: 15px;
   line-height: 1em;
+  display: flex;
+  flex-direction: column;
 }
+
+.rel-text i,.relText i{
+  font-size: 20px;
+    padding: 20px;
+    width: fit-content;
+    margin-left: -15px;
+    margin-top: 150px;
+    border: 1px solid black;
+}
+
+
 .rel-text:hover,
 .relText:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
 }
 
 .barista-container {
@@ -414,32 +440,47 @@ a {
 
 .img-text {
   width: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
 }
-.img-text h2,
-p {
+.img-text h2 {
+  font-size: 40px; 
+  margin:0;
+
+}
+.img-text a{
+   text-decoration: underline;  
+}
+
+.img-text p{
+  width:75%;
+  line-height: 35px;
+  font-size: 20px;
   text-align: center;
 }
 
-.a-button {
-  display: flex;
-  justify-content: center;
+.img-text button {
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .see {
-  margin: 8% auto 4% auto;
-  padding: 40px auto;
-  background-color: rgb(120, 120, 120);
-}
-
-.more-border{
+  margin: 60px auto;
+  color: black;
   border-bottom: 10px solid white;
 }
 
 .see span {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 250px;
+  max-width: 250px;
   height: 50px;
 }
 

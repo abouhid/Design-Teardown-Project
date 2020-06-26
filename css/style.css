@@ -151,6 +151,11 @@ video {
   margin-left: 10px;
 }
 
+#more:hover{
+  background-color: rgb(80, 80, 80);
+
+}
+
 .ul-container li:hover {
   background-color: rgb(80, 80, 80);
 }
@@ -393,7 +398,20 @@ a {
   height: 570px;
   padding: 15px;
   line-height: 1em;
+  display: flex;
+  flex-direction: column;
 }
+
+.rel-text i,.relText i{
+  font-size: 20px;
+    padding: 20px;
+    width: fit-content;
+    margin-left: -15px;
+    margin-top: 150px;
+    border: 1px solid black;
+}
+
+
 .rel-text:hover,
 .relText:hover {
   transform: scale(1.05);
@@ -413,33 +431,47 @@ a {
 
 .img-text {
   width: 50%;
+  border:1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.img-text h2,
-p {
+.img-text h2 {
+  font-size: 40px; 
+  margin:0;
+
+}
+.img-text a{
+   text-decoration: underline;  
+}
+
+.img-text p{
+  width:75%;
+  line-height: 35px;
+  font-size: 20px;
   text-align: center;
 }
 
-.a-button {
-  display: flex;
-  justify-content: center;
+.img-text button {
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .see {
-  margin: 8% auto 4% auto;
-  padding: 40px auto;
+  margin: 60px auto;
   color: black;
-}
-
-.more-border{
-  background-color: transparent;
   border-bottom: 10px solid white;
 }
 
 .see span {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 250px;
+  max-width: 250px;
   height: 50px;
 }
 

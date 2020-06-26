@@ -110,6 +110,10 @@ video {
   background-color: rgb(40, 40, 40);
 }
 
+.grad1{
+  background: linear-gradient(15deg, #d4d4d4, #4b4b4b);;
+}
+
 .nav-container {
   height: 100px;
 }
@@ -261,10 +265,11 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .item > div {
-  width: 70%;
+  width: 80%;
   margin-top: 20px;
 }
 .article-container article:nth-child(-n + 2) {
@@ -286,6 +291,7 @@ main {
 .art-container {
   display: flex;
   padding-top: 40px;
+  align-items: center;
 }
 
 .author-pic-container {
@@ -302,9 +308,10 @@ main {
   font-size: 16px;
 }
 
-.search-icon {
+.comm-icon {
   width: 15px;
   height: 15px;
+  margin:0;
 }
 
 .author-pic-container img {
@@ -334,16 +341,15 @@ main {
 }
 
 .articleTitle span {
-  display: block;
-  height: 25px;
-  width: 150px;
+ 
+  width: 25px;
+
   padding: 5px;
   margin: 10px 0;
   font-size: 15px;
 }
 
 .categories {
-  height: 40px;
   display: flex;
 }
 
@@ -351,11 +357,16 @@ main {
   width: 200px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-top: 30px;
 }
-
+.categories a{
+  margin:0;
+}
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .categories > div {
@@ -364,17 +375,15 @@ a {
   margin: 5px;
 }
 .arrow i {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 
 .arrow {
-  width: 33%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
+  height: 70px;
   align-self: flex-start;
-  align-items: center;
+  margin-left: 67px;
+  margin-top: 100px;
 }
 
 .related-articles {
@@ -431,11 +440,11 @@ a {
 
 .img-text {
   width: 50%;
-  border:1px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 12px;
 }
 .img-text h2 {
   font-size: 40px; 

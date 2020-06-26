@@ -199,10 +199,7 @@ main {
 .articleTitle {
   font-size: 30px;
   margin: 10px auto;
-}
-
-.articleTitle span {
-  font-size: 15px;
+  height: 150px;
 }
 
 .art-container {
@@ -254,16 +251,13 @@ main {
   width: 200px;
 }
 
-.articleTitle {
-  height: 150px;
-}
-
 .articleTitle span {
   display: block;
   height: 25px;
   width: 150px;
   padding: 5px;
   margin: 10px 0;
+  font-size: 15px;
 }
 
 .categories {
@@ -406,6 +400,28 @@ p {
   padding: 20px;
   border-radius: 10px;
 }
+
+.personOweek{
+  background-color: rgb(160, 160, 160)
+}
+
+.articleTitlebottom {
+  border: 1px solid blue;
+  font-size: 30px;
+  margin: 10px auto;
+
+}
+
+.articleTitlebottom p {
+  text-align: left;
+}
+
+.articleTitlebottom
+.linkb {
+  color: rgb(40, 40, 40);
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 1600px) {
   .last {
     display: none;

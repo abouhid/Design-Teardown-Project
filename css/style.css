@@ -111,51 +111,63 @@ video {
 }
 
 .nav-container {
-  border: 1px solid black;
-  height: 70px;  
+  height: 100px;  
 }
 
 .ul-container {
   display: grid;
-  border: 1px solid black;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
   grid-auto-flow: column;
   align-items: center;
 }
 
 .ul-container li{
-  border: 1px solid black;
-  padding: 7px 5px;
-  border-radius: 5px;
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#img-nav{
+  height: 50px;
+  max-width: 110px;
+  width:110px;
+  margin:0;
+  background-image: url("https://image.flaticon.com/icons/png/512/23/23334.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.img-nav{
-  border: 1px solid black;
-    height: 70px;
-    margin: -7px 0;
-    max-width: 110px;
-    width:110px;
-  }
-
-.img-nav img{
-  width: fit-content;
-  max-height: 100%;
-  display: block;
-  max-width: 100%;
-
+.more{
+  background-color: rgb(100, 100, 100);
 }
 
-.input-container {
-  height: 56px;
+.ul-container li:hover{
+  background-color: rgb(80, 80, 80);
+}
+#img-nav:hover{
+  background-color: transparent;
+}
+
+#input-container {
+  background-color: white;
+  align-items: center;
+  font-size: 28px;
   display: flex;
 }
 
-.input-container input {
+#input-container input {
   width: 350px;
-  border-radius: 5px;
+  padding: 7px;
+  font-size: 28px;
+  border:none;
+}
+*:focus{
   outline: none;
 }
+
 
 /* MAIN */
 
@@ -394,10 +406,11 @@ p {
   color: white;
 }
 
-.click h2 {
+.click h2 a{
   font-size: 55px;
   text-align: center;
-  text-decoration: underline solid;
+  text-decoration: underline;
+  /* text-decoration-color: red; */
 }
 
 .click h5 {

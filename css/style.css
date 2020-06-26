@@ -434,7 +434,6 @@ a {
 }
 
 .barista-container img {
-  width: 258px;
   height: 290px;
 }
 
@@ -520,7 +519,7 @@ img {
 }
 
 .jump {
-  font-size: 1.8em;
+  font-size: 18px;
   background-color: rgb(40, 40, 40);
   color: white;
   padding: 20px;
@@ -649,7 +648,7 @@ img {
 
 .explore {
   max-width: 40vw;
-  padding: 80px;
+  padding: 30px;
   background-color: rgb(220, 220, 220);
   border-radius: 20px;
   margin-top: 50px;

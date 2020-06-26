@@ -425,19 +425,62 @@ p {
   border-radius: 10px;
 }
 
-.personOweek{
-  background-color: rgb(160, 160, 160)
+.articles-botom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.person {
+  font-size: 30px;
+  margin: 10px auto;
+  width: 1000px;
+  padding: 40px;
+  text-align: left;
+}
+
+.personOweek {
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.personOweek h2 {
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: 1rem;
+  color: rgb(40, 40, 40);
+}
+
+.personOweek img {
+  margin-left: 100px;
+  border-radius: 20px;
+  border: 10px solid rgb(40, 40, 40);
+  transform: rotate(-15deg);
+  transform-origin: left bottom;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.personOweek img:hover {
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+  background-origin: border-box;
+  box-shadow: none;
 }
 
 .articleTitlebottom {
-  border: 1px solid blue;
   font-size: 30px;
   margin: 10px auto;
-
+  
 }
 
 .articleTitlebottom p {
   text-align: left;
+}
+
+.authopb {
+  text-decoration: underline;
 }
 
 .articleTitlebottom

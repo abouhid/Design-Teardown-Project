@@ -461,11 +461,11 @@ img {
   color: white;
 }
 
-.click h2 a {
+.click h2 {
   font-size: 55px;
   text-align: center;
   text-decoration: underline;
-  /* text-decoration-color: red; */
+  text-decoration-color: rgb(100, 100, 100);
 }
 
 .click h5 {
@@ -523,7 +523,6 @@ img {
   border: 10px solid rgb(40, 40, 40);
   transform: rotate(-15deg);
   transform-origin: left bottom;
-  
   box-shadow: 10px 10px 5px grey;
 }
 
@@ -557,12 +556,83 @@ img {
 .design-container {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
+  color: white;
 }
 
-.book {
-  width: 20%;
-  border: none;
+.d-text-container {
+  padding: 2% 10% 2% 5%;
+  width: 70vw;
 }
+
+.color-buttom:hover {
+  color: rgb(200, 200, 200);
+}
+
+.d-text-container h3, h2, p {
+  margin-top: 30px;
+}
+
+.d-text-container h2 {
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+.d-text-container h3 {
+  font-size: 1em;
+}
+
+.meet {
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+}
+
+.book img {  
+  transform: rotate(-15deg);
+  transform-origin: left bottom;
+  box-shadow: 0px 10px 2px -2px grey;
+  width: 60%;
+  margin-top: -5%;
+}
+
+.book img:hover {
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+  background-origin: border-box;
+  box-shadow: none;
+}
+
+.explore {
+  max-width: 40vw;
+  padding: 80px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 20px;
+  margin-top: 50px;
+  color: white;
+}
+
+.guide-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.our {
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: 1rem;
+  color: rgb(40, 40, 40);
+  position: absolute;
+  text-decoration: none;
+  font-size: 2em;
+  display: block;
+  margin: -100px;  
+}
+
 @media screen and (min-width: 1600px) {
   .last {
     display: none;

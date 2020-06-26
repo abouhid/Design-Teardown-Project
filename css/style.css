@@ -175,6 +175,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(200, 200, 200);
+
 }
 
 .main-title, .main-title+span {
@@ -477,8 +479,15 @@ p {
 .articles-botom {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 1500px;
 }
+
+.articles-botom article {
+  width: 50%;
+}
+
+
 
 .person {
   font-size: 30px;

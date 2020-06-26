@@ -423,10 +423,13 @@ p {
 }
 
 .see {
-  border-bottom: 3px solid rgb(200, 200, 200);
   margin: 8% auto 4% auto;
   padding: 40px auto;
   background-color: rgb(120, 120, 120);
+}
+
+.more-border{
+  border-bottom: 10px solid white;
 }
 
 .see span {
@@ -487,8 +490,6 @@ p {
   width: 50%;
 }
 
-
-
 .person {
   font-size: 30px;
   margin: 10px auto;
@@ -547,6 +548,15 @@ p {
   text-decoration: underline;
 }
 
+.design-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book {
+  width: 20%;
+  border: none;
+}
 @media screen and (min-width: 1600px) {
   .last {
     display: none;

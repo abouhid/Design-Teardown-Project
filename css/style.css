@@ -191,12 +191,58 @@ main {
 }
 
 .bringBack {
-  width: 230px;
   height: 62px;
-  border: 1px solid red;
   right: 60px;
   position: absolute;
   margin-top: 40px;
+  align-items: center;
+}
+
+.bringBack div {
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.1s ease-in-out;
+  transform: rotate(-15deg);
+  transform-origin: left bottom;
+  box-shadow: 10px 10px 5px grey;
+ 
+}
+
+.bringBack div span{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/circle.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bringBack div span:hover{
+  transform: rotate(-180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.bringBack a{
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid black;
+  color: #fff;
+  margin-left: 10px;
+  transition: all 0.1s ease-in-out;
+
+}
+
+.bringBack a:hover {
+ background-color: white;
+ color:black;
 }
 
 .item {
@@ -262,7 +308,7 @@ main {
   box-shadow: 10px 10px 5px grey;
 }
 
-.author-pic-container img:hover {
+.author-pic-container img:hover,.bringBack div:hover {
   object-fit: cover;
   display: block;
   transform: scale(1);

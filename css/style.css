@@ -86,12 +86,17 @@ video {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   vertical-align: baseline;
+  line-height: 1.5;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  filter: grayscale(100%);
 }
 
 .lightgrey {
@@ -191,6 +196,9 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: rgb(200, 200, 200);
+  font-family: 'Roboto','Poppins','Raleway','Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .main-title,
@@ -497,7 +505,7 @@ a,
 p,
 h2,
 img {
-  margin: 20px auto;
+  padding: 20px auto;
   color: white;
 }
 
@@ -529,32 +537,34 @@ img {
 .articles-botom {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1500px;
+  width: 100vw;
 }
 
 .articles-botom article {
   width: 50%;
+  margin: 100px auto;
 }
 
 .person {
   font-size: 30px;
   margin: 10px auto;
-  width: 1000px;
-  padding: 40px;
+  width: 850px;
+  padding-top: 40px;
   text-align: left;
 }
 
 .personOweek {
   font-size: 30px;
-  margin: 10px auto;
 }
 
 .personOweek h2 {
   transform: rotate(90deg);
   transform-origin: top left;
-  margin-left: 1rem;
+  margin-left: 2.5rem;
   color: rgb(40, 40, 40);
+  font-size: 0.8em;
 }
 
 .personOweek img {

@@ -121,6 +121,7 @@ img {
 
 .nav-container {
   height: 100px;
+  padding-top: 17px;
 }
 
 .ul-container {
@@ -402,21 +403,36 @@ a {
   padding: 40px 20px;
   background-color: lightgrey;
 }
+
+.related-articles div{
+  margin-top: 20px;
+}
+
 .relText {
+  display: flex;
+  flex-direction: column;
   transition: all 0.2s ease-in-out;
   width: 33.33%;
   height: 570px;
   padding: 15px;
-  line-height: 1em;
+  line-height: 1em;  
 }
+
+.relText div,.rel-text div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: -webkit-fill-available;
+}
+
 .rel-text {
+  display: flex;
+  flex-direction: column;
   transition: all 0.2s ease-in-out;
   width: 25%;
   height: 570px;
   padding: 15px;
-  line-height: 1em;
-  display: flex;
-  flex-direction: column;
+  line-height: 1em;  
 }
 
 .rel-text i,.relText i{
@@ -424,10 +440,13 @@ a {
     padding: 20px;
     width: fit-content;
     margin-left: -15px;
-    margin-top: 150px;
-    border: 1px solid black;
 }
 
+.rel-text h2,.relText h2{
+  color: black;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+}
 
 .rel-text:hover,
 .relText:hover {

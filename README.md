@@ -2,7 +2,7 @@
 This is a collaborative project which has the objective of building a heatmap of the Smashing magazine website, completed based on the requirement to complete Microverse program/course titled "HTML and CSS",
 
 
-![screenshot](./app_screenshot.png)
+![screenshot](app_screenshot.PNG)
 
 This project consists of building a webpage using:
 Visual hierarchy.

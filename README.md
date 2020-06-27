@@ -1,5 +1,5 @@
 # Design-Teardown-Project
-
+This is a collaborative project which has the objective to better our design visualization and understanding.
 
 ![screenshot]()
 
@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/abouhid/Design-Teardown-Project/feature-branch/index.html)
 
 
 ## Authors
@@ -24,15 +24,14 @@
 
 👤 Zulma Rocio
 
-- Github: [@githubhandle]()
-- Twitter: [@twitterhandle]()
+- Github: [@githubhandle](https://github.com/Rocio01)
 - Linkedin: [linkedin]()
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page]()
+Feel free to check the [issues page](https://github.com/abouhid/Design-Teardown-Project/issues)
 
 ## Show your support
 

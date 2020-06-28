@@ -101,13 +101,39 @@ a {
   cursor: pointer;
 }
 
-h5, a, p, h2, img {
+h5, 
+a, 
+p, 
+h2, 
+img {
   padding: 20px auto;
   color: white;
 }
 
 img {
   filter: grayscale(100%);
+}
+
+footer {
+  height: 660px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h4 {
+  margin: 85px auto 15px auto;
+  font-size: 20px;
+}
+
+footer p {
+  margin: 5px auto;
+  font-size: 16px;
+}
+
+footer a {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .lightgrey {
@@ -171,11 +197,6 @@ img {
   display: flex;
 }
 
-#more img {
-  width: 25px;
-  margin: 0;
-  margin-left: 10px;
-}
 
 #input-container {
   background-color: white;
@@ -207,7 +228,7 @@ main {
   font-weight: 300;
 }
 
-.main-title, 
+.main-title,
 .main-title + span {
   box-sizing: content-box;
   margin: 40px auto;
@@ -359,7 +380,7 @@ main {
   margin: 0;
 }
 
-.categories>div {
+.categories > div {
   height: 30px;
   width: fit-content;
   margin: 5px;
@@ -679,17 +700,6 @@ main {
 
 /* footer */
 
-footer {
-  height: 660px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-footer h4 {
-  margin: 85px auto 15px auto;
-  font-size: 20px;
-}
 
 .footer-list {
   display: flex;
@@ -705,16 +715,6 @@ footer h4 {
 .footer-list li {
   margin-right: 30px;
   font-size: 20px;
-}
-
-footer p {
-  margin: 5px auto;
-  font-size: 16px;
-}
-
-footer a {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .footer-links {
@@ -773,7 +773,8 @@ footer a {
   background-color: white;
 }
 
-.author-pic-container img:hover, .bringBack div:hover {
+.author-pic-container img:hover,
+.bringBack div:hover {
   object-fit: cover;
   display: block;
   transform: scale(1);
@@ -792,3 +793,8 @@ footer a {
   transition: all 0.3s ease-in-out;
 }
 
+#more img {
+  width: 25px;
+  margin: 0;
+  margin-left: 10px;
+}

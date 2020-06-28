@@ -735,7 +735,7 @@ main {
   font-size: 16px;
 }
 
-.footer-imgs{
+.footer-imgs {
   display: flex;
   justify-content: space-around;
   width: 1500px;

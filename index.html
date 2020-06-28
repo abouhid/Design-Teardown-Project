@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Smash Magazine - For Web Designers and Developers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/png;base64,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" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="nav-container grad1">
+    <ul class="ul-container">
+    <li id="img-nav"></li>
+    <li><a>Articles</a></li>
+    <li><a>Guides</a></li>
+    <li><a>Books</a></li>
+    <li><a>Events</a></li>
+    <li><a>Memberships</a></li>
+      
+        <li id="more"><a>More</a><img alt="cat logo"
+            src="https://d33wubrfki0l68.cloudfront.net/e3f5fe5fb4ec15257cc4137f13a0d5081b4ea5f8/aca41/images/icons/menu-cat.svg">
+        </li>    
+      <li id="input-container">
+        <i class="fa fa-search"></i>
+        <input placeholder="Search articles..." />
+      </li>
+    </ul>
+  </header>
+
+  <main>
+
+<span class="main-title"> Don't Miss These Latest</span><span>Articles</span>
+
+
+    <div class="bringBack">
+      <div><span></span></div>
+      <a>Seriously, grey?</a>
+    </div>
+    <section class="article-container">
+      <h1>Heading</h1>
+      <article class="item lightmidgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+             <div><a></a></div>
+          </div>
+          <div class="articleAuthor">
+            <span> <a class="authorp">Andrew Clarke</a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitle">
+          <a>
+            <h2>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit <br> Lorem, ipsum dolor.</h2>
+          </a>
+          <a href="#"><span><img alt="comment-icon" class="comm-icon" src="images/search.png"> Leave a comment</span> </a>
+        </div>
+        <div class="categories">
+                <p><a href="#"> # Performance <sup>125</sup></a> <a href="#"> # Tools <sup>230</sup></a> </p>
+        </div>
+
+        <span class="arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+
+      </article>
+      <article class="item lightgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+            <div><a></a></div>
+         </div>
+          <div class="articleAuthor">
+            <span> <a class="authorp">Philip Kieli</a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitle">
+          <a>
+            <h2>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit <br> Lorem, ipsum dolor.</h2>
+          </a>
+          <a href="#"><span> <img alt="comment-icon" class="comm-icon" src="images/search.png"> Leave a comment </span></a>
+        </div>
+        <div class="categories">
+                <p><a href="#"> # Performance <sup>125</sup></a> <a href="#"> # Tools <sup>230</sup></a> </p>
+        </div>
+
+        <span class="arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+
+      </article>
+      <article class="item darkgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+            <div><a></a></div>
+         </div>
+          <div class="articleAuthor">
+            <span> <a class="authorp">Adeyene David</a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitle">
+          <a>
+            <h2>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit <br> Lorem, ipsum dolor.</h2>
+          </a>
+          <a href="#"><span> <img alt="comment-icon" class="comm-icon" src="images/search.png"> Leave a comment </span></a>
+        </div>
+        <div class="categories">
+                <p><a href="#"> # Performance <sup>125</sup></a> <a href="#"> # Tools <sup>230</sup></a> </p>
+        </div>
+
+        <span class="arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+
+      </article>
+      <article class="item midgrey last">
+        <div class="art-container">
+          <div class="author-pic-container">
+            <div><a></a></div>
+         </div>
+          <div class="articleAuthor">
+            <span> <a class="authorp">Suzanne Scacca</a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitle">
+          <a>
+            <h2>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit <br> Lorem, ipsum dolor.</h2>
+          </a>
+          <a href="#"><span> <img alt="comment-icon" class="comm-icon" src="images/search.png"> Leave a comment </span></a>
+        </div>
+        <div class="categories">
+                <p><a href="#"> # Performance <sup>125</sup></a> <a href="#"> # Tools <sup>230</sup></a> </p>
+        </div>
+
+        <span class="arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+
+      </article>
+
+
+    </section>
+
+    <section class="related-articles">
+
+      <div class="relText midgrey">
+        <span>6 days ago</span>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+        <br><br>
+        <h4>by Zulma Rocio</h4>
+        <br>
+        <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ducimus exercitationem totam excepturi ea accusantium explicabo
+          ipsum aut ratione ipsa dicta dolorem provident nulla, consequatur
+          dolor possimus, reprehenderit eum distinctio aliquam soluta eius
+          adipisci odit modi illo! A aperiam expedita in maiores laboriosam?
+          At amet quam similique tempore quia sed explicabo.</h3>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </div>
+      </div>
+
+      <div class="relText lightmidgrey">
+        <span>6 days ago</span>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+        <br><br>
+        <h4>by Wlimer Alexis</h4>
+        <br>
+        <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ducimus exercitationem totam excepturi ea accusantium explicabo
+          ipsum aut ratione ipsa dicta dolorem provident nulla, consequatur
+          dolor possimus, reprehenderit eum distinctio aliquam soluta eius
+          adipisci odit modi illo! A aperiam expedita in maiores laboriosam?
+          At amet quam similique tempore quia sed explicabo.</h3>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </div>
+      </div>
+
+      <div class="relText lightgrey">
+        <span>6 days ago</span>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+        <br><br>
+        <h4>by Alexandre</h4>
+        <br>
+        <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ducimus exercitationem totam excepturi ea accusantium explicabo
+          ipsum aut ratione ipsa dicta dolorem provident nulla, consequatur
+          dolor possimus.</h3>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </div>
+      </div>
+
+      <div class="img-text darkmidgrey">
+        <div class="barista-container">
+            <div><a></a></div>
+        </div>
+        <a href="#">
+          <h2> 1625 smashing members</h2> <br>
+        </a>
+        <p >A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. <a href="#">Join the family.</a></p>
+    
+
+         <button type="button">Explore features <i class="fa fa-arrow-right"
+              aria-hidden="true"></i> </button><br>
+        <p>Already have an account? <a href="#">Sign in!</a></p>
+
+      </div>
+
+        <div class="rel-text lightmidgrey">
+          <span>6 days ago</span>
+          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+          <br><br>
+          <h4>by Zulma Rocio</h4>
+          <br>
+          <div>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus exercitationem totam excepturi ea accusantium explicabo
+            ipsum aut ratione ipsa dicta dolorem provident nulla, consequatur
+            dolor possimus, reprehenderit eum distinctio aliquam soluta eius
+            adipisci odit modi illo! A aperiam expedita in maiores laboriosam?
+            At amet quam similique tempore quia sed explicabo.</h3>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+        </div>
+
+        <div class="rel-text lightgrey">
+          <span>6 days ago</span>
+          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+          <br><br>
+          <h4>by Wlimer Alexis</h4>
+          <br>
+          <div>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus exercitationem totam excepturi ea accusantium explicabo
+            ipsum aut ratione ipsa dicta dolorem provident nulla, consequatur
+            dolor possimus, reprehenderit eum distinctio aliquam soluta eius
+            adipisci odit modi illo! A aperiam expedita in maiores laboriosam?
+            At amet quam similique tempore quia sed explicabo.</h3>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </div>
+        <div class="rel-text darkmidgrey">
+          <span>6 days ago</span>
+          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+          <br><br>
+          <h4>by Alexandre</h4>
+          <br>
+          <div>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus exercitationem totam excepturi ea accusantium explicabo
+            ipsum aut ratione ipsa dicta dolorem provident nulla, consequatur
+            dolor possimus.</h3>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </div>
+          <div class="rel-text midgrey">
+            <span>6 days ago</span>
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+            <br><br>
+            <h4>by Zulma Rocio</h4>
+            <br>
+            <div>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Ducimus exercitationem totam excepturi ea accusantium explicabo
+              ipsum aut ratione ipsa dicta dolorem provident nulla, consequatur
+              dolor possimus, reprehenderit eum distinctio aliquam soluta eius
+              adipisci odit modi illo! A aperiam expedita in maiores laboriosam?
+              At amet quam similique tempore quia sed explicabo.</h3>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </div>
+        </div>
+          <div class="img-text darkmidgrey">
+            <div class="barista-container">
+              <div><a></a></div>
+          </div>
+            <a href="#">
+              <h2> New on smashing tv </h2> <br>
+            </a>
+            <p >A channel where seasoned developers show how they design, build, work and play. Coming up next: <a href="#">Inspired Design Decisions With Emmett McBain: Art Direction As Social Equity</a> with Andrew Clarke (Jul 2).</p>
+            <button type="button"> See all upcoming episodes <i class="fa fa-arrow-right" aria-hidden="true"></i></button><br>
+            <p>Already have an account? <a href="#">Sign in!</a></p>
+    
+          </div>
+      </section>
+     
+     <a href="#" class="see"> <span>SEE ALL LATEST ARTICLES  <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+      
+     <article class="click">
+      <h5>JUNE 2020 • SHIPPING NOW</h5>
+      <a href="#"><h2>Meet “Click!”: Encourage Clicks <br> Without Shady Tricks</h2></a>
+      <p>Our new book on how to boost business KPIs, build trust and address <br>
+         doubts effectively — without alienating people along the way. By Paul Boag
+      </p>
+      <a href="#" class="jump"> <span>Jump to table of contents <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+      <div></div>
+
+    </article>
+    <article class="articles-botom">
+      <div class="personOweek">
+        <h2>- Community Links</h2>
+        <span class="pow"><a></a></span>
+        <p class="person lightgrey"> PERSON OF THE WEEK <br> <br>
+          Lisi Linhart is a Creative Developer from Austria who is passionate about web animation. With a 
+          background in coding as well as design, she loves to combine technology with creative ideas — in the 
+          animation and UI experiments she shares on Codepen and the tutorials she publishes on her blog, for example.
+           Lisi is also a lecturer at the University of Applied Sciences in Salzburg, where she teaches students
+            about front-end development and design. You can find her on Twitter as @lisi_linhart. Thank you for sharing 
+            and caring, dear Lisi!</p>
+        </div>
+      <article class="item lightgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+          </div>
+          <div class="articleAuthor">
+            <span> <a href="#" class="authorp authopb">Lukas Klinser </a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitlebottom">
+          <a>
+            <h2>Lorem ipsum dolor.</h2>
+          </a>
+          <p>june 25, 2020- <a class="linkb" href="#"> productivity.so</a> Lorem ipsum dolor,<br>
+             sit amet consectetur Lorem ipsum dolor sit amet.<br>
+             adipisicing elit. Recusandae, minima!</p></div>
+      </article>
+      <article class="item lightgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+          </div>
+          <div class="articleAuthor">
+            <span> <a href="#" class="authorp authopb"> Chris Bettig </a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitlebottom">
+          <a>
+            <h2>Lorem ipsum dolor.</h2>
+          </a>
+          <p>june 27, 2020- <br> <a class="linkb" href="#">  amet consectetur.</a> Lorem ipsum dolor,<br>
+             sit amet consectetur.<br>
+             adipisicing elit.</p></div>
+      </article>
+      <article class="item lightgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+          </div>
+          <div class="articleAuthor">
+            <span> <a href="#" class="authorp authopb">Lukas Klinser </a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitlebottom">
+          <a>
+            <h2>Lorem ipsum dolor.</h2>
+          </a>
+          <p>june 25, 2020- <a class="linkb" href="#"> productivity.so</a> Lorem ipsum dolor,<br>
+             sit amet consectetur Lorem ipsum dolor sit amet.<br>
+             adipisicing elit. Recusandae, minima!</p></div>
+      </article>
+      <article class="item lightgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+          </div>
+          <div class="articleAuthor">
+            <span> <a href="#" class="authorp authopb">Lukas Klinser </a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitlebottom">
+          <a>
+            <h2>Lorem ipsum dolor.</h2>
+          </a>
+          <p>june 25, 2020- <a class="linkb" href="#"> productivity.so</a> Lorem ipsum dolor,<br>
+             sit amet consectetur Lorem ipsum dolor sit amet.<br>
+             adipisicing elit. Recusandae, minima!</p></div>
+      </article>
+      <article class="item lightgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+          </div>
+          <div class="articleAuthor">
+            <span> <a href="#" class="authorp authopb">Lukas Klinser </a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitlebottom">
+          <a>
+            <h2>Lorem ipsum dolor.</h2>
+          </a>
+          <p>june 25, 2020- <a class="linkb" href="#"> productivity.so</a> Lorem ipsum dolor,<br>
+             sit amet consectetur Lorem ipsum dolor sit amet.<br>
+             adipisicing elit. Recusandae, minima!</p></div>
+      </article>
+      <article class="item lightgrey">
+        <div class="art-container">
+          <div class="author-pic-container">
+          </div>
+          <div class="articleAuthor">
+            <span> <a href="#" class="authorp authopb">Lukas Klinser </a> </span> <span> <a class="wrote">wrote</a> </span>
+          </div>
+        </div>
+        <div class="articleTitlebottom">
+          <a>
+            <h2>Lorem ipsum dolor.</h2>
+          </a>
+          <p>june 25, 2020- <a class="linkb" href="#"> productivity.so</a> Lorem ipsum dolor,<br>
+             sit amet consectetur Lorem ipsum dolor sit amet.<br>
+             adipisicing elit. Recusandae, minima!</p></div>
+      </article>
+    </article>
+    <a href="#" class="see"> <span class="more-border"> MORE LINKS ON TWITTER <i class="fa fa-arrow-right"
+          aria-hidden="true"></i></span></a>
+    <article class="design-container darkmidgrey">
+      <div class="d-text-container">
+        <h3>FEATURED SMASHING BOOK</h3>
+        <h2>Design Systems</h2>
+        <p class="meet">
+          Meet Design Systems, a recent Smashing book in which Alla Kholmatova explores how to set
+          up an effective design system to create great digital products. With common traps, gotchas and lessons
+          learned.</p>
+          <a href="#" class="jump color-buttom"> <span>Jump to table of contents <i class="fa fa-arrow-right"
+            aria-hidden="true"></i></span></a></div>
+      <div class="book"></div>
+    </article>
+
+    <article class="guide-container">
+      <div class="d-text-container explore">
+        <span class="our">- Our Guides</span>
+        <h3>A SMASHING GUIDE TO</h3>
+        <h2>JavaScript & <br> Frameworks</h2>
+        <p class="meet">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aliquam ea, optio nemo 
+          delectus sed dolores facere maxime alias libero cum quibusdam velit, sapiente cupiditate et molestias cumque
+           repellendus! Soluta optio corporis vel esse reprehenderit debitis, quidem voluptatum consequuntur quibusdam.</p>
+          <a href="#" class="jump color-buttom"> <span> Explore JavaScript & Frameworks </span></a>
+      </div>
+      <div class="d-text-container explore">
+        <h3>A SMASHING GUIDE TO</h3>
+        <h2> CSS layout</h2>
+        <p class="meet">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aliquam ea, optio nemo 
+          delectus sed dolores facere maxime alias libero cum quibusdam velit, sapiente cupiditate et molestias cumque
+           repellendus! Soluta optio corporis vel esse reprehenderit debitis, quidem voluptatum consequuntur quibusdam.</p>
+          <a href="#" class="jump color-buttom"> <span> Explore CSS layout </span></a>
+      </div>
+      <div class="d-text-container explore">
+        <h3>A SMASHING GUIDE TO</h3>
+        <h2>Web Performance</h2>
+        <p class="meet">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aliquam ea, optio nemo 
+          delectus sed dolores facere maxime alias libero cum quibusdam velit, sapiente cupiditate et molestias cumque
+           repellendus! Soluta optio corporis vel esse reprehenderit debitis, quidem voluptatum consequuntur quibusdam.</p>
+          <a href="#" class="jump color-buttom"> <span> Explore Performance</span></a>
+      </div>
+      <div class="d-text-container explore">
+        <div class="news">        </div>
+        <a href="#">
+          <h2> Email Newsletter</h2> <br>
+        </a>
+        <p class="meet">Every second Tuesday, we send an email newsletter with useful
+          techniques on front-end and UX. Subscribe and get
+          <strong>Smart Interface Design Checklists PDF</strong> in your
+          inbox. 🔮</p>
+
+          <a href="#" class="jump color-buttom"> <span> Explore features</span></a>
+         <br>
+
+      </div>
+
+    </article>
+
+
+  </main>
+  <footer class="darkmidgrey">
+    <h4>BROWSE ALL SMASHING MAGAZINE TOPICS</h4>
+
+    <ul class="footer-list">
+      <li><a href="#">Accessibility</a></li>
+      <li><a href="#">Android</a></li>
+      <li><a href="#">Animation</a></li>
+      <li><a href="#">Apps</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Design Patterns</a></li>
+      <li><a href="#">Design Systems</a></li>
+      <li><a href="#">E-Commerce</a></li>
+      <li><a href="#">Freebies</a></li>
+      <li><a href="#">Graphics</a></li>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">Illustrator</a></li>
+      <li><a href="#">Inspiration</a></li>
+      <li><a href="#">iOS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">Mobile</a></li>
+      <li><a href="#">Pattern Libraries</a></li>
+      <li><a href="#">Performance</a></li>
+      <li><a href="#">Photoshop</a></li>
+      <li><a href="#">Plugins</a></li>
+      <li><a href="#">React</a></li>
+      <li><a href="#">Responsive Web Design</a></li>
+      <li><a href="#">Service Workers</a></li>
+      <li><a href="#">Sketch</a></li>
+      <li><a href="#">Typography</a></li>
+      <li><a href="#">UI</a></li>
+      <li><a href="#">Usability</a></li>
+      <li><a href="#">User Experience</a></li>
+      <li><a href="#">Workflow</a></li>
+      <li><a href="#">Wallpapers</a></li>
+      <li><a href="#">Web Design</a></li>
+      <li><a href="#">WordPress</a></li>
+      <li><a href="#">Workflow</a></li>
+    </ul>
+    <div class="footer-imgs">
+      <div class="bird"></div>
+      <div>
+    <p><i>With a commitment to quality content for the design community.</i></p>
+    <p>Founded by Vitaly Friedman and Sven Lennartz. 2006–2020.</p>
+    <p>Smashing is proudly running on <a
+        href="https://www.netlify.com/?utm_source=link&amp;utm_medium=parter&amp;utm_campaign=sm-footer">Netlify</a>.
+    </p>
+    <p>Fonts by <a href="http://latinotype.com/">Latinotype</a>.</p>
+
+    <ul class="footer-links">
+      <li>✎ <a href="#">Write for us</a></li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">About us (Impressum)</a></li>
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Membership login</a></li>
+      <li><a href="#">Delivery times</a></li>
+      <li><a href="#">Advertise</a></li>
+    </ul>
+  </div>
+    
+  <div class="cat"></div>
+  </div>
+  </footer>
+</body>
+
+</html>

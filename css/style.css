@@ -322,7 +322,7 @@ main {
   width: 50%;
 }
 
-.article-container article:nth-child(-n+3) {
+.article-container article:nth-child(-n + 3) {
   padding-top: 130px;
 }
 
@@ -344,11 +344,6 @@ main {
   align-items: center;
 }
 
-.author-pic-container {
-  width: 85px;
-  height: 85px;
-}
-
 .authorp {
   color: #fff;
   font-size: 20px;
@@ -364,9 +359,10 @@ main {
   margin: 0;
 }
 
-.author-pic-container img {
-  max-width: 85px;
-  max-height: 85px;
+.author-pic-container {
+  width: 85px;
+  height: 85px;
+  background-color: grey;
   transform: rotate(-15deg);
   transform-origin: left bottom;
   border: 4px solid white;
@@ -475,8 +471,10 @@ main {
   justify-content: center;
 }
 
-.barista-container img {
+.barista-container div {
   height: 290px;
+  width: 290px;
+  background-color: gray;
 }
 
 .img-text {
@@ -518,12 +516,18 @@ main {
 }
 
 .click {
-  margin-top: 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(120, 120, 120);
   width: 100%;
+}
+
+.click div {
+  width: 863px;
+  height: 567px;
+  background-color: darkgray;
+  margin-bottom: 50px;
 }
 
 .click h2 {
@@ -549,6 +553,7 @@ main {
   color: white;
   padding: 20px;
   border-radius: 10px;
+  width: 300px;
 }
 
 .articles-botom {
@@ -563,13 +568,13 @@ main {
 .person {
   font-size: 30px;
   margin: 10px auto;
-  width: 850px;
   padding-top: 40px;
   text-align: left;
 }
 
 .personOweek {
   font-size: 30px;
+  padding: 30px 100px;
 }
 
 .personOweek h2 {
@@ -577,6 +582,18 @@ main {
   transform-origin: top left;
   color: rgb(40, 40, 40);
   font-size: 0.8em;
+}
+
+.personOweek .pow {
+  margin-left: 100px;
+  border-radius: 20px;
+  border: 10px solid rgb(40, 40, 40);
+  transform: rotate(-15deg);
+  transform-origin: left bottom;
+  box-shadow: 10px 10px 5px grey;
+  width: 200px;
+  height: 200px;
+  display: block;
 }
 
 .personOweek img {
@@ -608,9 +625,9 @@ main {
 
 .design-container {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   color: white;
+  justify-content: space-around;
 }
 
 .d-text-container {
@@ -633,6 +650,15 @@ main {
   font-size: 1em;
 }
 
+.news,
+.bird,
+.cat {
+  height: 200px;
+  width: 290px;
+  background-color: gray;
+  cursor: pointer;
+}
+
 .meet {
   font-size: 1.5em;
   text-align: left;
@@ -640,12 +666,14 @@ main {
   margin-bottom: 50px;
 }
 
-.book img {
+.book {
   transform: rotate(-15deg);
   transform-origin: left bottom;
   box-shadow: 0 10px 2px -2px grey;
-  width: 60%;
-  margin-top: -5%;
+  width: 400px;
+  height: 450px;
+  background-color: darkgray;
+  cursor: pointer;
 }
 
 .explore {
@@ -670,7 +698,7 @@ main {
   position: absolute;
   text-decoration: none;
   font-size: 2em;
-  margin-left: -85px;
+  margin-left: -40px;
 }
 
 @media screen and (min-width: 1600px) {
@@ -765,7 +793,7 @@ main {
   box-shadow: none;
 }
 
-.personOweek img:hover {
+.personOweek .pow:hover {
   object-fit: cover;
   display: block;
   transform: scale(1);
@@ -781,7 +809,7 @@ main {
   background-color: white;
 }
 
-.author-pic-container img:hover,
+.author-pic-container:hover,
 .bringBack div:hover {
   object-fit: cover;
   display: block;

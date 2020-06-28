@@ -110,7 +110,6 @@ a,
 p,
 h2,
 img {
-  padding: 20px auto;
   color: white;
 }
 
@@ -738,7 +737,7 @@ main {
 .footer-imgs {
   display: flex;
   justify-content: space-around;
-  width: 1500px;
+  width: 100%;
 }
 
 #more:hover {

@@ -323,7 +323,7 @@ main {
   width: 50%;
 }
 
-.article-container article:nth-child(-n+2) {
+.article-container article:nth-child(-n+3) {
   padding-top: 130px;
 }
 

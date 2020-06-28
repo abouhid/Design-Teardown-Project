@@ -101,7 +101,7 @@ a {
   cursor: pointer;
 }
 
-.article-container h1{
+.article-container h1 {
   display: none;
 }
 
@@ -736,9 +736,9 @@ main {
 }
 
 .footer-imgs{
- display: flex;
- justify-content: space-around;
- width: 1500px;
+  display: flex;
+  justify-content: space-around;
+  width: 1500px;
 }
 
 #more:hover {

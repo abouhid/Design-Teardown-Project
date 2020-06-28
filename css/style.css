@@ -88,7 +88,7 @@ video {
   -webkit-text-size-adjust: 100%;
   vertical-align: baseline;
   line-height: 1.5;
-} 
+}
 
 * {
   margin: 0;
@@ -101,10 +101,10 @@ a {
   cursor: pointer;
 }
 
-h5, 
-a, 
-p, 
-h2, 
+h5,
+a,
+p,
+h2,
 img {
   padding: 20px auto;
   color: white;
@@ -263,6 +263,15 @@ main {
   transform: rotate(-15deg);
   transform-origin: left bottom;
   box-shadow: 10px 10px 5px grey;
+}
+
+.see span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  max-width: 250px;
+  height: 50px;
 }
 
 .bringBack div span {
@@ -438,7 +447,7 @@ main {
   line-height: 1em;
 }
 
-.rel-text i, 
+.rel-text i,
 .relText i {
   font-size: 20px;
   padding: 20px;
@@ -500,15 +509,6 @@ main {
   border-bottom: 10px solid white;
 }
 
-.see span {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 250px;
-  max-width: 250px;
-  height: 50px;
-}
-
 .click {
   margin-top: 8% auto;
   display: flex;
@@ -517,7 +517,6 @@ main {
   background-color: rgb(120, 120, 120);
   width: 100vw;
 }
-
 
 .click h2 {
   font-size: 55px;
@@ -616,7 +615,9 @@ main {
   width: 70vw;
 }
 
-.d-text-container h3, h2, p {
+.d-text-container h3,
+.d-text-container h2,
+.d-text-container p {
   margin-top: 30px;
 }
 

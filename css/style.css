@@ -1,6 +1,84 @@
 /* css reset */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,12 +88,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   -webkit-text-size-adjust: 100%;
   vertical-align: baseline;
   line-height: 1.5;
-}
+} 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h5, a, p, h2, img {
+  padding: 20px auto;
+  color: white;
 }
 
 img {
@@ -89,18 +177,6 @@ img {
   margin-left: 10px;
 }
 
-#more:hover {
-  background-color: rgb(80, 80, 80);
-}
-
-.ul-container li:hover {
-  background-color: rgb(80, 80, 80);
-}
-
-#img-nav:hover {
-  background-color: transparent;
-}
-
 #input-container {
   background-color: white;
   align-items: center;
@@ -126,12 +202,13 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: rgb(200, 200, 200);
-  font-family: "Roboto", "Poppins", "Raleway", "Roboto", sans-serif;
+  font-family: "Roboto", "Poppins", "Raleway", sans-serif;
   line-height: 1.5;
   font-weight: 300;
 }
 
-.main-title, .main-title+span {
+.main-title, 
+.main-title + span {
   box-sizing: content-box;
   margin: 40px auto;
   color: #fff;
@@ -142,7 +219,7 @@ main {
   position: absolute;
 }
 
-.main-title+span {
+.main-title + span {
   margin: 80px auto;
 }
 
@@ -177,11 +254,6 @@ main {
   background-repeat: no-repeat;
 }
 
-.bringBack div span:hover {
-  transform: rotate(-180deg);
-  transition: all 0.3s ease-in-out;
-}
-
 .bringBack a {
   padding: 7px 15px;
   border-radius: 10px;
@@ -194,11 +266,6 @@ main {
   transition: all 0.1s ease-in-out;
 }
 
-.bringBack a:hover {
-  background-color: white;
-  color: black;
-}
-
 .item {
   display: flex;
   align-items: center;
@@ -206,7 +273,7 @@ main {
   cursor: pointer;
 }
 
-.item>div {
+.item > div {
   width: 80%;
   margin-top: 20px;
 }
@@ -263,15 +330,6 @@ main {
   box-shadow: 10px 10px 5px grey;
 }
 
-.author-pic-container img:hover, .bringBack div:hover {
-  object-fit: cover;
-  display: block;
-  transform: scale(1);
-  transition: all 0.4s ease-out;
-  background-origin: border-box;
-  box-shadow: none;
-}
-
 .articleAuthor {
   margin-left: 10px;
   height: 23px;
@@ -299,12 +357,6 @@ main {
 
 .categories a {
   margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
 }
 
 .categories>div {
@@ -365,23 +417,19 @@ a {
   line-height: 1em;
 }
 
-.rel-text i, .relText i {
+.rel-text i, 
+.relText i {
   font-size: 20px;
   padding: 20px;
   width: fit-content;
   margin-left: -15px;
 }
 
-.rel-text h2, .relText h2 {
+.rel-text h2, 
+.relText h2 {
   color: black;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
   font-size: 20px;
-}
-
-.rel-text:hover, .relText:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: white;
 }
 
 .barista-container {
@@ -449,10 +497,6 @@ a {
   width: 100vw;
 }
 
-.click h5, a, p, h2, img {
-  padding: 20px auto;
-  color: white;
-}
 
 .click h2 {
   font-size: 55px;
@@ -521,15 +565,6 @@ a {
   box-shadow: 10px 10px 5px grey;
 }
 
-.personOweek img:hover {
-  object-fit: cover;
-  display: block;
-  transform: scale(1);
-  transition: all 0.4s ease-out;
-  background-origin: border-box;
-  box-shadow: none;
-}
-
 .articleTitlebottom {
   font-size: 30px;
   margin: 10px auto;
@@ -560,10 +595,6 @@ a {
   width: 70vw;
 }
 
-.color-buttom:hover {
-  color: rgb(200, 200, 200);
-}
-
 .d-text-container h3, h2, p {
   margin-top: 30px;
 }
@@ -590,15 +621,6 @@ a {
   box-shadow: 0px 10px 2px -2px grey;
   width: 60%;
   margin-top: -5%;
-}
-
-.book img:hover {
-  object-fit: cover;
-  display: block;
-  transform: scale(1);
-  transition: all 0.4s ease-out;
-  background-origin: border-box;
-  box-shadow: none;
 }
 
 .explore {
@@ -709,3 +731,64 @@ footer a {
   margin-right: 15px;
   font-size: 16px;
 }
+
+#more:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+.ul-container li:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+#img-nav:hover {
+  background-color: transparent;
+}
+
+.color-buttom:hover {
+  color: rgb(200, 200, 200);
+}
+
+.book img:hover {
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+  background-origin: border-box;
+  box-shadow: none;
+}
+
+.personOweek img:hover {
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+  background-origin: border-box;
+  box-shadow: none;
+}
+
+.rel-text:hover, 
+.relText:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+.author-pic-container img:hover, .bringBack div:hover {
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+  background-origin: border-box;
+  box-shadow: none;
+}
+
+.bringBack a:hover {
+  background-color: white;
+  color: black;
+}
+
+.bringBack div span:hover {
+  transform: rotate(-180deg);
+  transition: all 0.3s ease-in-out;
+}
+

@@ -101,6 +101,10 @@ a {
   cursor: pointer;
 }
 
+.article-container h1{
+  display: none;
+}
+
 h5,
 a,
 p,
@@ -115,7 +119,7 @@ img {
 }
 
 footer {
-  height: 660px;
+  height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -307,6 +311,7 @@ main {
   align-items: center;
   flex-direction: column;
   cursor: pointer;
+  border: 1px solid black;
 }
 
 .item > div {
@@ -316,7 +321,6 @@ main {
 
 .articles-botom article {
   width: 50%;
-  margin: 100px auto;
 }
 
 .article-container article:nth-child(-n+2) {
@@ -515,12 +519,12 @@ main {
 }
 
 .click {
-  margin-top: 8% auto;
+  margin-top: 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(120, 120, 120);
-  width: 100vw;
+  width: 100%;
 }
 
 .click h2 {
@@ -553,7 +557,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1500px;
-  width: 100vw;
+  width: 100%;
+  margin-top: 80px;
 }
 
 .person {
@@ -571,7 +576,6 @@ main {
 .personOweek h2 {
   transform: rotate(90deg);
   transform-origin: top left;
-  margin-left: 2.5rem;
   color: rgb(40, 40, 40);
   font-size: 0.8em;
 }
@@ -587,7 +591,7 @@ main {
 
 .articleTitlebottom {
   font-size: 30px;
-  margin: 10px auto;
+  margin: 90px auto;
 }
 
 .articleTitlebottom p {
@@ -606,7 +610,7 @@ main {
 .design-container {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   color: white;
 }
 
@@ -729,6 +733,12 @@ main {
 .footer-links li {
   margin-right: 15px;
   font-size: 16px;
+}
+
+.footer-imgs{
+ display: flex;
+ justify-content: space-around;
+ width: 1500px;
 }
 
 #more:hover {

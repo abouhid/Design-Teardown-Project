@@ -41,9 +41,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 Alexandre Bouhid
 
-- Github: [@githubhandle](https://github.com/abouhid)
-
-- LinkedIn: [linkedin](https://www.linkedin.com/in/alexandrebouhid/)
+- Github: [@abouhid](https://github.com/abouhid)
+- LinkedIn: [Alexandre Bouhid](https://www.linkedin.com/in/alexandrebouhid/)
 
 👤 Zulma Rocio
 
